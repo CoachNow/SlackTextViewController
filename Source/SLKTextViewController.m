@@ -707,9 +707,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
             [self.view slk_animateLayoutIfNeededWithBounce:bounces
                                                    options:UIViewAnimationOptionCurveEaseInOut|UIViewAnimationOptionLayoutSubviews|UIViewAnimationOptionBeginFromCurrentState
                                                 animations:^{
-                                                    if (!self.isInverted) {
-                                                        self.scrollViewProxy.contentOffset = newOffset;
-                                                    }
+//                                                    if (!self.isInverted) {
+//                                                        self.scrollViewProxy.contentOffset = newOffset;
+//                                                    }
                                                     if (weakSelf.textInputbar.isEditing) {
                                                         [weakSelf.textView slk_scrollToCaretPositonAnimated:NO];
                                                     }
